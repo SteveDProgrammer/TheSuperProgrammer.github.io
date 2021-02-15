@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 2000px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-logo{
+  font-family: 'Holtwood One SC', serif;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 35px;
+  margin: auto;
+  border: #fff solid 4px;
+}
+
+.donate-btn{
+  background: rgb(213, 62, 89);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 20px;
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.header{
+  background: rgba(250, 84, 84, 0.90);/*rgb(33, 233, 125);*/
+  box-shadow: 0 0 10px 0 #000;
+}
+
+nav{
+  padding-bottom: 10px;
+}
+
+nav ul{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  list-style-type: none;
+  border-top: #fff solid 1px;
+  border-bottom: #fff solid 1px;
+}
+
+nav ul li{
+  display: table-cell;
+  text-align: center;
+  background: #000;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Slideshow content */
+
+.slideshow-container{
+  max-width: 1280px;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.mySlides{
+  margin-top: 20px;
+  display: none;
+}
+
+.mySlides img{
+  vertical-align: bottom;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin:0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.6) solid 1.5px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #bbb;
+}
+
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+  from{ opacity: .4}
+  to {opacity: 1}
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-4{
+  flex-basis: 20%;
+  min-width: 200px;
+}
+.col-4 img{
+  width:100%;
+  box-shadow: 0 0 10px #fff;
+}
+
+.col-4 .game_container{
+  transtion: transform 0.5s;
+}
+
+.col-4 .game_container:hover{
+  transform: translateY(-5px);
+}
+
+.title{
+  text-align: center;
+  margin: 40px 0 20px;
+  /*margin: 0 auto 40px;*/
+  position: relative;
+  line-height: 60px;
+}
+.title::after{
+  content:'';
+  background: rgba(250, 84, 84, 0.90);
+  width: 80px;
+  height: 5px;
+  border: rgba(255, 255, 255, 0.5) solid 1px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.game_name{
+  background: rgb(135, 0, 255);
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.play_btn{
+  display: inline-block;
+  background: rgb(255, 43, 43);
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: solid #fff 2px;
+  box-shadow: 0 0 10px #fff;
+}

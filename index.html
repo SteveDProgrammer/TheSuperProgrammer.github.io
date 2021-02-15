@@ -1,8 +1,174 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages.</p>
-<iframe src="https://thesuperprogrammer.github.io/RPS_Fighter_WebGL_Build/" height="700" width="1000" frameborder="0">
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shitty Games Hub | Online Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--header--->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="pic-logo">
+            <img src="images/logo.png" alt="" width="80px">
+          </div>
+          <div class="text-logo">
+            <p>SHITTY GAMES HUB</p>
+          </div>
+          <div class="donate-btn">
+            <p>DONATE</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="#">Top Games</a></li>
+          <li><a href="#">New Games</a></li>
+          <li><a href="#">Upcoming Games</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--slideshow container-->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1/3</div>
+        <img src="images/slide1.jpg" alt="" style="width:100%">
+        <div class="text">Caption One</div>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">2/3</div>
+          <img src="images/slide2.jpg" alt="" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">3/3</div>
+          <img src="images/slide3.jpg" alt="" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+
+      <!-- Next and Previous Buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/Circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--Featured Games-->
+    <h2 class="title">FEATURED GAMES</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/featured_games_1.jpg" alt="">
+          <h4 class="game_name">APEX LEGENDS</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/featured_games_2.jpg" alt="">
+          <h4 class="game_name">COD ONLINE</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/featured_games_3.jpg" alt="">
+          <h4 class="game_name">EXPEDITIONS VIKING</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/featured_games_4.jpg" alt="">
+          <h4 class="game_name">MINECRAFT</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+    </div>
+
+    <!--Latest Games-->
+    <h2 class="title">LATEST GAMES</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/latest_games_1.jpg" alt="">
+          <h4 class="game_name">MONSTER HUNTER</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/latest_games_2.jpg" alt="">
+          <h4 class="game_name">FORCES OF FREEDOM</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/latest_games_3.jpg" alt="">
+          <h4 class="game_name">RED DEAD ONLINE</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/latest_games_4.jpg" alt="">
+          <h4 class="game_name">SACKBOY</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+    </div>
+
+    <!--Upcoming Games-->
+    <h2 class="title">UPCOMING GAMES</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/upcoming_games_1.jpg" alt="">
+          <h4 class="game_name">NARUTO ONLINE</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/upcoming_games_2.jpg" alt="">
+          <h4 class="game_name">FRISBEE FOREVER</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/upcoming_games_3.jpg" alt="">
+          <h4 class="game_name">SUPER MARIO RUN</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+      <div class="col-4">
+        <div class="game_container">
+          <img src="images/upcoming_games_4.jpg" alt="">
+          <h4 class="game_name">MONOPOLY</h4>
+        </div>
+        <p class="play_btn">PLAY &#9655;</p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
 </html>
