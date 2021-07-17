@@ -219,3 +219,8 @@ nav ul li a{
   border: solid #fff 2px;
   box-shadow: 0 0 10px #fff;
 }
+
+.play_btn a{
+  color: inherit;
+  text-decoration: inherit;
+}
